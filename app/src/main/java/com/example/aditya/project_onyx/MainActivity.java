@@ -1,5 +1,7 @@
 package com.example.aditya.project_onyx;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -82,21 +84,24 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.events) {
             fragment=new Events_fragment();
 
-        } else if (id == R.id.schedule) {
-            fragment=new ScheduleFragment();
         } else if (id == R.id.meetteam) {
 
         } else if (id == R.id.facebook) {
-
+            String url = "https://www.facebook.com/onyxgalgotiaslitfest/?hc_ref=ARS1Kr_cAzbF6Nu8p1vEVvdzVWme_sltiqb6dtZOVXbS_PP7_tT_w76eVwRYSbSt0q0&fref=nf";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         } else if (id == R.id.instagram) {
-
+            String url = "https://www.instagram.com/onyxliteraryfestgcet/";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         }
         if (fragment!=null){
             FragmentManager fragmentManager=getSupportFragmentManager();
             FragmentTransaction ft=fragmentManager.beginTransaction();
             ft.replace(R.id.screen_area,fragment);
             ft.commit();
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
