@@ -4,10 +4,23 @@
     android:layout_height="match_parent"
     android:background="@drawable/back">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="40dp"
+        android:id="@+id/top"
+        android:textColor="#FFF"
+        android:background="@drawable/text_background0"
+        android:textStyle="bold"
+        android:text="Enter your details below to Register"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:hint="Name"
+        android:layout_below="@+id/top"
         android:id="@+id/pName"
         android:layout_margin="5dp"
         android:layout_marginTop="15dp"
@@ -76,6 +89,7 @@
         android:id="@+id/pEvent"
         android:textIsSelectable="false"
         android:inputType="none"
+        android:editable="false"
         android:layout_below="@id/pPhone"
         style="@style/Base.CardView"/>
 

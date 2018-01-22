@@ -83,6 +83,9 @@ public class Register extends AppCompatActivity {
                             et3.setText(null);
                             et4.setText(null);
                             et5.setText(null);
+
+                            //Dialog Code
+
                             finish();
                         } else {
                             Snackbar.make(but, "Try Again", Snackbar.LENGTH_LONG).show();

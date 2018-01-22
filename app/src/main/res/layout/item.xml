@@ -16,7 +16,7 @@
             android:layout_gravity="end"
             android:id="@+id/a"
             android:layout_marginTop="30dp"
-            android:textSize="30dp"
+            android:textSize="28dp"
             android:textColor="#FFF"
             android:paddingLeft="37dp"
             android:textStyle="bold"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/dayText"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginStart="290dp"
         android:background="@drawable/days"
         android:padding="5dp"
         android:textStyle="bold"/>

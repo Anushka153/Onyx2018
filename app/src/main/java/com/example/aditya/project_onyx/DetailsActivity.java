@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.security.Key;
 
 public class DetailsActivity extends AppCompatActivity {
@@ -23,6 +25,9 @@ public class DetailsActivity extends AppCompatActivity {
         ImageView imageView=(ImageView)findViewById(R.id.image);
         TextView textView=(TextView)findViewById(R.id.ttle);
         TextView textView1=(TextView) findViewById(R.id.descr);
+        ImageView corPic = (ImageView) findViewById(R.id.corPic);
+        TextView corName = (TextView) findViewById(R.id.corName);
+        TextView corCall = (TextView) findViewById(R.id.corCall);
 
         Bundle b=getIntent().getExtras();
         if(b==null)
@@ -32,6 +37,8 @@ public class DetailsActivity extends AppCompatActivity {
             textView.setText(title);
             textView1.setText(b.getString("desc"));
             imageView.setImageResource(R.drawable.propic);
+            corName.setText(b.getString("name"));
+            corCall.setText(b.getString("call"));
         }
     }
 
