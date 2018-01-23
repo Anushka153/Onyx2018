@@ -1,6 +1,8 @@
 package com.example.aditya.project_onyx;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        toolbar.setBackground(new ColorDrawable(Color.TRANSPARENT));
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
