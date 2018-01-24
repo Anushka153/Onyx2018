@@ -70,10 +70,12 @@ public class Register extends AppCompatActivity {
         });
     }
 
-    public void postData(final String name, final String email, final String college ,final String phone, final String event) {
+    public void postData(final String name, final String email, final String college
+            ,final String phone, final String event) {
 
         progressDialog.show();
-        final String fullUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdt19FBT6aN2EBVYsItllFKLFfqL50qSxCVY_RZW4xUpsXcqg/formResponse";
+        final String fullUrl =
+                "https://docs.google.com/forms/d/e/1FAIpQLSdt19FBT6aN2EBVYsItllFKLFfqL50qSxCVY_RZW4xUpsXcqg/formResponse";
         StringRequest request = new StringRequest(
                 Request.Method.POST,
                 fullUrl,

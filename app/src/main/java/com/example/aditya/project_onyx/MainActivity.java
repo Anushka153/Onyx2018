@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.meetteam) {
 
         } else if (id == R.id.facebook) {
-            String url = "https://www.facebook.com/onyxgalgotiaslitfest/?hc_ref=ARS1Kr_cAzbF6Nu8p1vEVvdzVWme_sltiqb6dtZOVXbS_PP7_tT_w76eVwRYSbSt0q0&fref=nf";
+            String url =
+                    "https://www.facebook.com/onyxgalgotiaslitfest/?hc_ref=ARS1Kr_cAzbF6Nu8p1vEVvdzVWme_sltiqb6dtZOVXbS_PP7_tT_w76eVwRYSbSt0q0&fref=nf";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
