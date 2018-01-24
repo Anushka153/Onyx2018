@@ -30,6 +30,7 @@ public class Events_fragment extends Fragment{
     String corName[]={"sknfisnfw","wefwefwerf","ergerger","ergerg","regerger","ergerg","ergerg","ergerg","ergerge"};
     String corPhone[]={"31645626549","664465161","615849416303","516511849416","515151156","5165161513",
             "514653165136","25413161651","54154544216513"};
+    //int posters[]={R.drawable.got,R.drawable.gangs,};
 
     @Nullable
     @Override
