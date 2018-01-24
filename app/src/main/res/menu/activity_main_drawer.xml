@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    >
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/about"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="About" />
+            android:icon="@drawable/ic_about"
+            android:title="About"
+
+                        />
         <item
             android:id="@+id/events"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_event"
             android:title="Events" />
-        <item
-            android:id="@+id/schedule"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Schedule" />
+
         <item
             android:id="@+id/meetteam"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_meettheteam"
             android:title="Meet The Team" />
     </group>
 
@@ -26,11 +26,11 @@
         <menu>
             <item
                 android:id="@+id/facebook"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_facebook"
                 android:title="Facebook" />
             <item
                 android:id="@+id/instagram"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_insta"
                 android:title="Instagram" />
         </menu>
     </item>

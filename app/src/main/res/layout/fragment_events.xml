@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/collage"
+    android:background="@drawable/back"
     tools:context="com.example.aditya.project_onyx.Events_fragment" >
 
     <ListView
         android:id="@+id/list_view"
         android:paddingHorizontal="5dp"
-        android:dividerHeight="15dp"
-        android:paddingStart="3dp"
-        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
         android:background="@android:color/transparent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

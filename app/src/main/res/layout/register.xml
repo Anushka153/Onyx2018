@@ -2,110 +2,123 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back">
+
+
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:fontFamily="@font/lato_bold"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:id="@+id/top"
-        android:textColor="#FFF"
+        android:textColor="#363232"
         android:background="@drawable/text_background0"
-        android:textStyle="bold"
-        android:text="Enter your details below to Register"/>
+        android:textStyle="bold|italic"
+        android:text="Registration"/>
+
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:hint="Name"
-        android:layout_below="@+id/top"
         android:id="@+id/pName"
-        android:layout_margin="5dp"
-        android:layout_marginTop="15dp"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/butt"
+        android:hint="Name"
         android:inputType="textCapWords"
         android:padding="5dp"
-        android:background="@drawable/butt"
         android:singleLine="true"
         android:textSize="20dp"
-        style="@style/Base.CardView"/>
+        android:textStyle="italic" />
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:hint="Email ID"
-        android:textSize="20dp"
-        android:inputType="textEmailAddress"
-        android:layout_below="@+id/pName"
-        android:padding="5dp"
-        android:background="@drawable/butt"
         android:id="@+id/pEmail"
-        android:layout_margin="5dp"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pName"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/butt"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
         android:singleLine="true"
-        style="@style/Base.CardView"/>
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
 
     <EditText
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
         android:id="@+id/pCollege"
-        android:background="@drawable/butt"
-        android:singleLine="true"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/pEmail"
         android:layout_below="@+id/pEmail"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/butt"
         android:hint="College"
-        android:textSize="20dp"
-        android:layout_margin="5dp"
         android:inputType="textCapCharacters"
-        style="@style/Base.CardView"/>
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:layout_height="30dp"
         android:id="@+id/pPhone"
-        android:textSize="20dp"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/pCollege"
+        android:layout_below="@+id/pCollege"
+        android:layout_marginTop="30dp"
         android:background="@drawable/butt"
-        android:layout_below="@id/pCollege"
-        android:inputType="numberDecimal"
-        android:singleLine="true"
-        android:maxLength="10"
         android:hint="Contact Number"
-        style="@style/Base.CardView"/>
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:padding="5dp"
-        android:textSize="20dp"
-        android:layout_height="30dp"
-        android:background="@drawable/butt"
-        android:singleLine="true"
-        android:layout_margin="5dp"
         android:id="@+id/pEvent"
-        android:textIsSelectable="false"
-        android:inputType="none"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pPhone"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/butt"
         android:editable="false"
-        android:layout_below="@id/pPhone"
-        style="@style/Base.CardView"/>
+        android:inputType="none"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
 
 
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="25sp"
+       android:fontFamily="@font/ubuntu_regular"
         android:id="@+id/send"
         android:padding="10dp"
-        android:textColor="#FFF"
+        android:textColor="#363232"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:text="Confirm"
+        android:text="REGISTER"
         android:background="@drawable/text_background0"
         />
 </RelativeLayout>
