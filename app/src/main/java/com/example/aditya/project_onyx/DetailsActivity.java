@@ -35,7 +35,7 @@ public class DetailsActivity extends AppCompatActivity {
         else {
             title = b.getString("title");
             textView.setText(title);
-            textView1.setText(b.getString("desc"));
+            textView1.setText(b.getInt("desc"));
             imageView.setImageResource(R.drawable.propic);
             corName.setText(b.getString("name"));
             corCall.setText(b.getString("call"));

@@ -22,14 +22,15 @@ import android.widget.TextView;
 
 public class Events_fragment extends Fragment{
 
-    String event[]={"Game Of Thrones","Poetry Event","Gangs of Wasseypur","How It Should Have Ended","sdcsskjcnkljasnkjnlkn","fbethr","evr","rerbe","egege"};
-    String content[]={"e35rgf135\ng4165emsnnnnnxuchbsjkmox","w354ergfe654g6","e54rge4rge5smkvnisdmvlk4r","2re4fw65r4g6e","35erf1465erf146er541",
-            "e5r4f65e41f35er41g3e5\nr64e","e35rg416e5rg4e54g6jbgfghjklk\njhygfg8u98y7t65dfghjko7g6ftghh8y7g6fghijoihge4","e5fgr4v65\n3s64g84srf5","1248515f41451"};
+    String event[]={"Game Of Thrones","Kavi Sammelan","Gangs of Wasseypur","How It Should Have Ended"
+            ,"Mindspark","Shipwreck","evr","rerbe"};
+    int content[]={R.string.got_content,R.string.poetry_content,R.string.gangs_content,R.string.how_it_content,
+            R.string.mindspark_content, R.string.ship_content,R.string.content_1,R.string.content_2};
     String day[]={"1, 9th February","1, 9th February","1, 9th February","1, 9th February"
-            ,"2, 10th February","2, 10th February","2, 10th February","2, 10th February","2, 10th February"};
-    String corName[]={"sknfisnfw","wefwefwerf","ergerger","ergerg","regerger","ergerg","ergerg","ergerg","ergerge"};
+            ,"2, 10th February","2, 10th February","2, 10th February","2, 10th February"};
+    String corName[]={"sknfisnfw","wefwefwerf","ergerger","ergerg","regerger","ergerg","ergerg","ergerg"};
     String corPhone[]={"31645626549","664465161","615849416303","516511849416","515151156","5165161513",
-            "514653165136","25413161651","54154544216513"};
+            "514653165136","25413161651"};
     //int posters[]={R.drawable.got,R.drawable.gangs,};
 
     @Nullable
