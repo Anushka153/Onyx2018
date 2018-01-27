@@ -47,7 +47,7 @@
                         android:paddingHorizontal="5dp"
                         android:minHeight="50dp"
                         android:textColor="#E7E6EB"
-                        android:fontFamily="@font/lato_bold"
+                        android:font="@font/lato_bold"
                         android:textAllCaps="true"
                         android:background="@color/colorPrimaryDark"
                         android:textSize="33dp"/>
@@ -55,13 +55,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/primaryGreen"
+                        android:background="@android:color/background_light"
                         android:layout_margin="9dp"
                         android:minHeight="400dp"
-                        android:textColor="#122a5e"
+                        android:textColor="@android:color/background_dark"
                         android:layout_below="@+id/ttle"
                         android:textSize="20dp"
-                        android:fontFamily="@font/ubuntu_regular"
+                        android:fontFamily="@font/pt_sans_web_regular"
                         android:padding="5dp"
                         android:isScrollContainer="true"
                         android:id="@+id/descr"/>

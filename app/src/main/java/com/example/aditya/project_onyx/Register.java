@@ -60,12 +60,12 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if((et1.getText()==null)||(et2.getText()==null)||(et3.getText()==null)
-                        ||(et4.getText()==null))
-                    Snackbar.make(but, "Fields Left Empty", Snackbar.LENGTH_LONG).show();
+                        ||(et4.getText()==null)){
+                    Snackbar.make(but, "Fields Left Empty", Snackbar.LENGTH_LONG).show();}
                 else
-
+                {
                 postData(et1.getText().toString(),et2.getText().toString(),et3.getText().toString()
-                        ,et4.getText().toString(),et5.getText().toString());
+                        ,et4.getText().toString(),et5.getText().toString());}
             }
         });
     }
